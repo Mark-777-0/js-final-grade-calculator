@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Final Grade Calculator - Markhub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style> 
+    #loading, .results{
+        display: none;
+    }</style>
+  </head>
+  <body style="background-color: rgb(51, 48, 84);">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3"> <strong>  Final Grade Calculator </strong></h1>
+                    <form id="grade-form">
+                        <div class="form-group">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon">%</span>
+                                <input type="number" class="form-control" id="current-grade" placeholder="Your Current Grade">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon">%</span>
+                                <input type="number" class="form-control" id="desired-grade" placeholder="You Want At Least A...">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon">%</span>
+                                <input type="number" class="form-control" id="final" placeholder="Your Final Is Worth">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="d-grid mb-4">
+                                <input type="submit" value="Calculate What I Need!" class="btn btn-secondary btn-block">
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Loading-->
+                    <div id="loading">
+                    <img style='width: 50%; margin:auto;' alt='loader' src="img/loading.gif">
+                    </div> 
+
+                    <!-- Results-->
+                    <div id='#results' class="results">
+                    <h5 id='title-result' class="mb-4"> <strong> Results </strong></h5>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text grade-needed" id="basic-addon">Grade Needed</span>
+                            <input type="text" class="form-control text-center" id="grade-needed" disabled>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="loan.js"> </script>
+  </body>
+</html>
